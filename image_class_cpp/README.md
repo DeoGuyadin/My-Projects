@@ -3,6 +3,7 @@ Title: image.cpp
 Author: Deo Guyadin
 
 Description: 
+
 	1) Program contains the definition of an image class which contains a a numeric text
 	   representation of a gray-scale image with additional features.
 
