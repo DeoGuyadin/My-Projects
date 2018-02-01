@@ -10,8 +10,6 @@
 #define KEY_RIGHT 77
 #define KEY_ENTER 13
 
-const std::string clear (100, '\n');
-
 typedef char box[11][21];
 
 box empty_box =  {{' ', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', ' '},
@@ -90,7 +88,7 @@ void assign_places (box *board[][3], int current_place[], int next_place[]);
 bool check_winner (box *board[][3], char c_board[][3], char player, box *player_select);
 
 int main(int argc, char const *argv[]) {
-    std::cout << clear;
+    system("cls");
     int input_key = 0;
     char winner = '\0';
     box *board[3][3]; // game board
@@ -160,7 +158,7 @@ int main(int argc, char const *argv[]) {
             }
         }
 
-        std::cout << clear;
+        system("cls");
 
         if (check_winner (board, c_board, 'X', &x_select)) {
             winner = 'X';
