@@ -155,7 +155,7 @@ public class GameGUI extends JFrame {
 		if (gameBoard[0][0] == player && gameBoard[0][1] == player && gameBoard[0][2] == player) {
 			gameButtons[0][0].setBackground(Color.GREEN);
 			gameButtons[0][1].setBackground(Color.GREEN);
-			gameButtons[0][1].setBackground(Color.GREEN);
+			gameButtons[0][2].setBackground(Color.GREEN);
 		} else if (gameBoard[1][0] == player && gameBoard[1][1] == player && gameBoard[1][2] == player) {
 			gameButtons[1][0].setBackground(Color.GREEN);
 			gameButtons[1][1].setBackground(Color.GREEN);
